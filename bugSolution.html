@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden.
+  </div>
+
+  <script>
+    // Correct approach using DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("myDiv").style.display = "none";
+    });
+  </script>
+</body>
+</html>
